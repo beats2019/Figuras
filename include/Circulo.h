@@ -7,16 +7,15 @@ class Circulo : public Figura2D
     public:
         Circulo( double );
 
-        virtual void imprimir() const;
-        virtual double area() const;
+        virtual double calcularAreaFigura() const;
+        virtual void imprimirInformacion() const;
 
-        double getRadio() const;
-        void setRadio( double );
-
-
+        double getRadioCirculo() const;
+        void setRadioCirculo( double );
 
     private:
-        double radio;
+        double radioCirculo;
+
 };
 
 #endif // CIRCULO_H

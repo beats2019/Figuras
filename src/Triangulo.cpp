@@ -2,50 +2,40 @@
 #include <iostream>
 using namespace std;
 
-    Triangulo::Triangulo( double b, double h)
-
+    Triangulo::Triangulo( double baseIntroducida, double alturaIntroducida)
+        :baseTriangulo( baseIntroducida ), alturaTriangulo(alturaIntroducida )
     {
-        setBase( b );
-        setAltura( h );
-
+        Figura2D::setAreaFigura( calcularAreaFigura() );
     }
 
-    void Triangulo::setAltura( double h)
+    double Triangulo::calcularAreaFigura() const
     {
-        altura = h;
-    }
-    double Triangulo::getAltura() const
-    {
-        return altura;
+        return getBaseTriangulo() * getAlturaTriangulo() / 2;
     }
 
-
-    void Triangulo::setBase( double b)
+    void Triangulo::imprimirInformacion() const
     {
-        base = b;
-    }
-
-    double Triangulo::getBase() const
-    {
-        return base;
-    }
-
-    double Triangulo::area() const
-    {
-        return ( getBase() * getAltura() ) / 2;
-    }
-
-    void Triangulo::imprimir() const
-    {
-        Figura2D::imprimir();
-        cout << "Triangulo" << "\nCon base = " << getBase()
-        <<"\tAltura = " << getAltura()
-        <<" \t->Area = " << area();
+        cout << "Este es un triangulo de area = " << calcularAreaFigura();
     }
 
 
 
+    void Triangulo::setAlturaTriangulo( double alturaIntroducida )
+    {
+        alturaTriangulo = alturaIntroducida;
+    }
+    double Triangulo::getAlturaTriangulo() const
+    {
+        return alturaTriangulo;
+    }
 
 
+    void Triangulo::setBaseTriangulo( double baseIntroducida )
+    {
+        baseTriangulo = baseIntroducida;
+    }
 
-
+    double Triangulo::getBaseTriangulo() const
+    {
+        return baseTriangulo;
+    }

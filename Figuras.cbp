@@ -36,15 +36,23 @@
 		<Unit filename="MainFiguras.cpp" />
 		<Unit filename="include/Circulo.h" />
 		<Unit filename="include/Cuadrilatero.h" />
+		<Unit filename="include/Esfera.h" />
 		<Unit filename="include/Figura.h" />
 		<Unit filename="include/Figura2D.h" />
+		<Unit filename="include/Figura3D.h" />
 		<Unit filename="include/Poligono.h" />
+		<Unit filename="include/PrismaRectangular.h" />
+		<Unit filename="include/PrismaTriangular.h" />
 		<Unit filename="include/Triangulo.h" />
 		<Unit filename="src/Circulo.cpp" />
 		<Unit filename="src/Cuadrilatero.cpp" />
+		<Unit filename="src/Esfera.cpp" />
 		<Unit filename="src/Figura.cpp" />
 		<Unit filename="src/Figura2D.cpp" />
+		<Unit filename="src/Figura3D.cpp" />
 		<Unit filename="src/Poligono.cpp" />
+		<Unit filename="src/PrismaRectangular.cpp" />
+		<Unit filename="src/PrismaTriangular.cpp" />
 		<Unit filename="src/Triangulo.cpp" />
 		<Extensions>
 			<code_completion />

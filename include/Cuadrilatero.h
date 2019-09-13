@@ -7,18 +7,14 @@ class Cuadrilatero : public Figura2D
     public:
         Cuadrilatero( double, double );
 
-        virtual void imprimir() const;
-        virtual double area() const;
+        virtual double calcularAreaFigura() const;
+        virtual void imprimirInformacion() const;
 
         void setLado1( double );
         double getLado1() const;
 
         void setLado2( double );
         double getLado2() const;
-
-
-
-
 
     private:
         double lado1;

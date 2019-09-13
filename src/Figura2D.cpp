@@ -2,16 +2,12 @@
 #include <iostream>
 using namespace std;
 
-    Figura2D::Figura2D( )
-
+    double Figura2D::getAreaFigura() const
     {
-
+        return areaFigura;
     }
 
-    void Figura2D::imprimir() const
+    void Figura2D::setAreaFigura( double areaIntroducida )
     {
-        cout << "\nFigura de tipo 2D: ";
-
+        areaFigura = areaIntroducida;
     }
-
-

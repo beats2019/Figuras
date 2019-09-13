@@ -2,27 +2,24 @@
 #define POLIGONO_H
 #include "Figura2D.h"
 
-
 class Poligono : public Figura2D
 {
+
     public:
+
         Poligono( double, int );
 
-        virtual void imprimir() const;
-        virtual double area() const;
+        virtual double calcularAreaFigura() const;
+        virtual void imprimirInformacion() const;
 
-        void setLongitud( double );
-        double getLongitud() const;
-        void setLados( int );
-        double getLados() const;
-
-
-
+        void setLongitudPoligono( double );
+        double getLongitudPoligono() const;
+        void setLadosPoligono( int );
+        double getLadosPoligono() const;
 
     private:
-        double longitud;
-        int lados;
-
+        double longitudPoligono;
+        int ladosPoligono;
 };
 
 #endif // POLIGONO_H

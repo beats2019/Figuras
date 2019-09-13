@@ -6,48 +6,80 @@
 1567870339 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura.h
 	<string>
 
-1567972058 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura2d.cpp
+1568166618 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura2d.cpp
 	"Figura2D.h"
 	<iostream>
 
-1567870339 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura2d.h
-	"Figura.h"
+1568332209 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura2d.h
 
-1567870473 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\triangulo.cpp
+1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\triangulo.cpp
 	"Triangulo.h"
 	<iostream>
 
-1567870339 c:\users\andres\documents\jla\c++\paquete!\figuras\include\triangulo.h
+1568332209 c:\users\andres\documents\jla\c++\paquete!\figuras\include\triangulo.h
 	"Figura2D.h"
 
-1567974454 source:c:\users\andres\documents\jla\c++\paquete!\figuras\mainfiguras.cpp
+1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\mainfiguras.cpp
 	<iostream>
-	"Figura.h"
+	<vector>
 	"Figura2D.h"
 	"Triangulo.h"
 	"Cuadrilatero.h"
 	"Circulo.h"
 	"Poligono.h"
+	"PrismaRectangular.h"
+	"PrismaTriangular.h"
+	"Esfera.h"
 
-1567871150 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\cuadrilatero.cpp
+1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\cuadrilatero.cpp
 	"Cuadrilatero.h"
 	<iostream>
 
-1567871029 c:\users\andres\documents\jla\c++\paquete!\figuras\include\cuadrilatero.h
+1568332209 c:\users\andres\documents\jla\c++\paquete!\figuras\include\cuadrilatero.h
 	"Figura2D.h"
 
-1567971998 c:\users\andres\documents\jla\c++\paquete!\figuras\include\circulo.h
+1568332305 c:\users\andres\documents\jla\c++\paquete!\figuras\include\circulo.h
 	"Figura2D.h"
 
-1567974364 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\circulo.cpp
+1568332305 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\circulo.cpp
 	"Circulo.h"
 	<iostream>
 
-1567974408 c:\users\andres\documents\jla\c++\paquete!\figuras\include\poligono.h
+1568332357 c:\users\andres\documents\jla\c++\paquete!\figuras\include\poligono.h
 	"Figura2D.h"
 
-1567974477 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\poligono.cpp
+1568332357 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\poligono.cpp
 	"Poligono.h"
+	<cmath>
+	<iostream>
+
+1568165621 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\prismarectangular.cpp
+	"PrismaRectangular.h"
+	<iostream>
+
+1568165623 c:\users\andres\documents\jla\c++\paquete!\figuras\include\prismarectangular.h
+	"Figura2D.h"
+
+1568165819 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura3d.cpp
+	"Figura3D.h"
+	<iostream>
+
+1568165684 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura3d.h
+
+1567993225 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\prismatriangular.cpp
+	"PrismaTriangular.h"
+	<iostream>
+	<cmath>
+
+1567992861 c:\users\andres\documents\jla\c++\paquete!\figuras\include\prismatriangular.h
+	"Figura3D.h"
+
+1567993244 c:\users\andres\documents\jla\c++\paquete!\figuras\include\esfera.h
+	"Figura3D.h"
+	"Figura2D.h"
+
+1567993235 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\esfera.cpp
+	"Esfera.h"
 	<cmath>
 	<iostream>
 

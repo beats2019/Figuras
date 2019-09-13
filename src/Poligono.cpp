@@ -4,67 +4,42 @@
 using namespace std;
 #define PI 3.141592
 
-    Poligono::Poligono( double l, int n )
-
+    Poligono::Poligono( double longitudIntroducida, int numeroLadosIntroducido )
+        :longitudPoligono( longitudIntroducida ), ladosPoligono( numeroLadosIntroducido )
     {
-       setLongitud( l );
-       setLados( n );
-
+       Figura2D::setAreaFigura( calcularAreaFigura() );
     }
 
-    double Poligono::area() const
+    double Poligono::calcularAreaFigura() const
     {
-        double apotema = getLongitud() / ( 2 * tan( PI / getLados() ));
-        return getLongitud() * getLados() * apotema / 2; // P*A/2
-    }
-
-    void Poligono::imprimir() const
-    {
-        Figura2D::imprimir();
-        cout << "Poligono Regular con "
-        << getLados() <<" lados. Cada lado mide "
-        << getLongitud() << " y su apotema es "
-        << getLongitud() / ( 2 * tan( PI / getLados() )) << "\t->Area = "
-        << area();
+        double apotema = getLongitudPoligono() / ( 2 * tan( PI / getLadosPoligono() ));
+        return  getLongitudPoligono() * getLadosPoligono() * apotema / 2; // P*A/2
     }
 
 
-
-    void Poligono::setLongitud( double l)
+    void Poligono::imprimirInformacion() const
     {
-        longitud = l;
-    }
-
-    double Poligono::getLongitud() const
-    {
-        return longitud;
-    }
-
-    void Poligono::setLados( int l )
-    {
-        lados = l;
-    }
-
-    double Poligono::getLados() const
-    {
-        return lados;
+        cout << "Este es un poligono de area = " << calcularAreaFigura();
     }
 
 
+    void Poligono::setLongitudPoligono( double longitudIntroducida)
+    {
+        longitudPoligono = longitudIntroducida;
+    }
 
+    double Poligono::getLongitudPoligono() const
+    {
+        return longitudPoligono;
+    }
 
+    void Poligono::setLadosPoligono( int numeroLadosIntroducido )
+    {
+        ladosPoligono = numeroLadosIntroducido;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    double Poligono::getLadosPoligono() const
+    {
+        return ladosPoligono;
+    }
 

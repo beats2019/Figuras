@@ -5,25 +5,24 @@
 
 class Triangulo : public Figura2D
 {
+
     public:
-        Triangulo( double, double );
+        Triangulo( double b, double h );
 
-        void setBase( double );
-        double getBase() const;
+        virtual double calcularAreaFigura() const;
+        virtual void imprimirInformacion() const;
 
-        void setAltura( double );
-        double getAltura() const;
+        void setBaseTriangulo( double );
+        double getBaseTriangulo() const;
 
-        virtual void imprimir() const;
-        virtual double area() const;
-
-
-
+        void setAlturaTriangulo( double );
+        double getAlturaTriangulo() const;
 
 
     private:
-        double base;
-        double altura;
+        double baseTriangulo;
+        double alturaTriangulo;
+
 };
 
 #endif // TRIANGULO_H

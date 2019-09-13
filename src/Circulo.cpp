@@ -3,31 +3,30 @@
 #include <iostream>
 using namespace std;
 
-    Circulo::Circulo( double r)
-        :radio( r )
+    Circulo::Circulo( double radioIntroducido )
+        :radioCirculo( radioIntroducido )
     {
-
+        Figura2D::setAreaFigura( calcularAreaFigura() );
     }
 
-    void Circulo::imprimir() const
+
+    double Circulo::calcularAreaFigura() const
     {
-        Figura2D::imprimir();
-        cout << "Circulo de radio "
-        << getRadio() << " \t->Area = "
-        << area();
+        return ( getRadioCirculo() * getRadioCirculo() ) * PI;
     }
 
-    double Circulo::area() const
+    void Circulo::imprimirInformacion() const
     {
-        return ( getRadio() * getRadio() ) * PI;
+        cout << "Este es un circulo de area = " << calcularAreaFigura();
     }
 
-     void Circulo::setRadio( double r )
+     void Circulo::setRadioCirculo( double radioIntroducido )
      {
-         radio = r;
+         radioCirculo = radioIntroducido;
      }
 
-    double Circulo::getRadio() const
+    double Circulo::getRadioCirculo() const
     {
-        return radio;
+        return radioCirculo;
     }
+

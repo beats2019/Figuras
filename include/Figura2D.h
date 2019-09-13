@@ -1,18 +1,22 @@
 #ifndef FIGURA2D_H
 #define FIGURA2D_H
-#include "Figura.h"
 
-class Figura2D : public Figura
+
+class Figura2D
 {
     public:
-        Figura2D( );
 
-        virtual void imprimir() const = 0;
-        virtual double area() const = 0;
+        virtual double calcularAreaFigura() const = 0;
+        virtual void imprimirInformacion() const = 0;
+        double getAreaFigura() const;
+        void setAreaFigura( double );
+
 
 
 
     private:
+        double areaFigura;
+
 
 };
 
