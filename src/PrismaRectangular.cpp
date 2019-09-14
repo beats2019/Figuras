@@ -3,16 +3,17 @@
 #include <iostream>
 using namespace std;
 
-/*
-    PrismaRectangular::PrismaRectangular( double a, double b, double h)
-        :lado1( a ), lado2( b ), altura( h )
+
+    PrismaRectangular::PrismaRectangular( double lado1Introducido, double lado2Introducido, double alturaIntroducida )
+        :lado1( lado1Introducido ), lado2( lado2Introducido ), altura( alturaIntroducida )
     {
-        //ctor
+        Figura3D::setAreaSuperficial( calcularAreaSuperficial() );
+        Figura3D::setVolumenSolido( calcularVolumenFigura() );
     }
 
-    void PrismaRectangular::setLado1( double val)
+    void PrismaRectangular::setLado1( double ladoIntroducido )
     {
-        lado1 = val;
+        lado1 = ladoIntroducido;
     }
 
     double PrismaRectangular::getLado1() const
@@ -20,18 +21,18 @@ using namespace std;
         return lado1;
     }
 
-    void PrismaRectangular::setLado2( double val)
+    void PrismaRectangular::setLado2( double ladoIntroducido )
     {
-        lado2 = val;
+        lado2 = ladoIntroducido;
     }
 
     double PrismaRectangular::getLado2() const
     {
         return lado2;
     }
-    void PrismaRectangular::setAltura( double h)
+    void PrismaRectangular::setAltura( double alturaIntroducida )
     {
-        altura = h;
+        altura = alturaIntroducida;
     }
 
     double PrismaRectangular::getAltura() const
@@ -39,7 +40,7 @@ using namespace std;
         return altura;
     }
 
-    double PrismaRectangular:: area() const
+    double PrismaRectangular::calcularAreaSuperficial() const
     {
         double A1 = getLado1() * getLado2();
         double A2 = getLado1() * getAltura();
@@ -47,36 +48,24 @@ using namespace std;
         return 2 * ( A1 + A2 + A3 );
     }
 
-    double PrismaRectangular:: volumen() const
+    double PrismaRectangular::calcularVolumenFigura() const
     {
         return getLado1() * getLado2() * getAltura();
     }
 
-    void PrismaRectangular:: imprimir() const
+    void PrismaRectangular::imprimirInformacion() const
     {
         if( getLado1() == getLado2() and getLado1() == getAltura() )
         {
             cout << "\nEste es un cubo de area  "
-            << area() << " y volumen  "
-            << volumen();
+            << calcularAreaSuperficial() << " y volumen  "
+            << calcularVolumenFigura();
         }
         else
         {
             cout << "\nEste es un prisma rectangular de area  "
-            << area() << " y volumen  "
-            << volumen();
+            << calcularAreaSuperficial() << " y volumen  "
+            << calcularVolumenFigura();
         }
     }
-
-
-*/
-
-
-
-
-
-
-
-
-
 

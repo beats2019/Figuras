@@ -1,16 +1,16 @@
 #ifndef PRISMARECTANGULAR_H
 #define PRISMARECTANGULAR_H
-#include "Figura2D.h"
+#include "Figura3D.h"
 
-class PrismaRectangular : public Figura2D
+class PrismaRectangular : public Figura3D
 {
-    /*
+
     public:
         PrismaRectangular( double , double , double);
 
-        virtual void imprimir() const;
-        virtual double area() const;
-        virtual double volumen() const;
+        virtual double calcularAreaSuperficial() const;
+        virtual double calcularVolumenFigura() const;
+        virtual void imprimirInformacion() const;
 
         void setLado1( double );
         double getLado1() const;
@@ -26,7 +26,7 @@ class PrismaRectangular : public Figura2D
         double lado1;
         double lado2;
         double altura;
-        */
+
 };
 
 #endif // PRISMARECTANGULAR_H

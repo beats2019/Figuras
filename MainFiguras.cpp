@@ -3,6 +3,7 @@ using namespace std;
 #include <vector>
 using std::vector;
 
+#include "Figura.h"
 #include "Figura2D.h"
 #include "Triangulo.h"
 #include "Cuadrilatero.h"
@@ -15,35 +16,37 @@ using std::vector;
 
     int main()
     {
-        Circulo miCirculo( 2 );
-        Poligono miPoligono( 4 , 6 );
-        Triangulo miTriangulo( 4, 2 );
-        Cuadrilatero miCuadrilatero( 5 , 5 );
+         vector < Figura* > figuras( 6 );
 
-        vector < Figura2D* > figuras( 4 );
+        figuras[ 0 ] = new Circulo( 5 );
+        figuras[ 1 ] = new Triangulo( 3, 2 );
+        figuras[ 2 ] = new Cuadrilatero( 5 , 3 );
+        figuras[ 3 ] = new Poligono( 4, 5 );
+        figuras[ 4 ] = new PrismaRectangular( 7 , 7 , 7 );
+        figuras[ 5 ] = new Esfera( 8 );
 
-        figuras[ 0 ] = &miCirculo;
-        figuras[ 1 ] = &miPoligono;
-        figuras[ 2 ] = &miTriangulo;
-        figuras[ 3 ] = &miCuadrilatero;
 
         for( size_t i = 0; i < figuras.size() ; i++ )
         {
-            Figura2D *derivadaPtr =
+            cout << "\nAnalizando el objeto de tipo " << typeid( *figuras[ i ] ).name() ;
+
+            Figura2D *figura2D_Ptr =     //Comprobar si es una figura 2D
                 dynamic_cast < Figura2D * >
-                    ( figuras[ i ] );
+                      ( figuras[ i ] );
 
-            if( derivadaPtr != 0 )
+            Figura3D *figura3D_Ptr =
+                dynamic_cast < Figura3D * >
+                      ( figuras[ i ] );
+
+
+            if( figura2D_Ptr != 0 )
+                cout << "\nEl area de la figura 2D es " << figura2D_Ptr->calcularAreaFigura() << endl;
+            else
             {
-                cout << "\nEs un objeto tipo 2d !";
+                cout << "\nEL area superficial de la figura 3D es " << figura3D_Ptr->calcularAreaSuperficial()
+                << " y el volumen es " << figura3D_Ptr->calcularVolumenFigura() << endl;
             }
-        }
-
-
-
-
-
-
+        }//fin for
 
 
         return 0;

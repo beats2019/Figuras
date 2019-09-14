@@ -8,17 +8,19 @@
         public:
             Esfera( double );
 
-            void setRadio( double );
-            double getRadio() const;
+            virtual double calcularAreaSuperficial() const;
+            virtual double calcularVolumenFigura() const;
+            virtual void imprimirInformacion() const;
 
-            virtual void imprimir() const;
-            virtual double area() const;
-            virtual double volumen() const;
+            void setRadioEsfera( double );
+            double getRadioEsfera() const;
+
+
 
 
 
         private:
-            double radio;
+            double radioEsfera;
     };
 
     #endif // ESFERA_H

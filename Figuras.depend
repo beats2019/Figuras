@@ -1,27 +1,27 @@
 # depslib dependency file v1.0
-1567870339 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura.cpp
+1568478980 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura.cpp
 	"Figura.h"
-	<iostream>
 
-1567870339 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura.h
-	<string>
+1568479203 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura.h
 
-1568166618 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura2d.cpp
+1568476796 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura2d.cpp
 	"Figura2D.h"
 	<iostream>
 
-1568332209 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura2d.h
+1568478277 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura2d.h
+	"Figura.h"
 
 1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\triangulo.cpp
 	"Triangulo.h"
 	<iostream>
 
-1568332209 c:\users\andres\documents\jla\c++\paquete!\figuras\include\triangulo.h
+1568477230 c:\users\andres\documents\jla\c++\paquete!\figuras\include\triangulo.h
 	"Figura2D.h"
 
-1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\mainfiguras.cpp
+1568480645 source:c:\users\andres\documents\jla\c++\paquete!\figuras\mainfiguras.cpp
 	<iostream>
 	<vector>
+	"Figura.h"
 	"Figura2D.h"
 	"Triangulo.h"
 	"Cuadrilatero.h"
@@ -30,6 +30,7 @@
 	"PrismaRectangular.h"
 	"PrismaTriangular.h"
 	"Esfera.h"
+	<typeinfo>
 
 1568332209 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\cuadrilatero.cpp
 	"Cuadrilatero.h"
@@ -41,7 +42,7 @@
 1568332305 c:\users\andres\documents\jla\c++\paquete!\figuras\include\circulo.h
 	"Figura2D.h"
 
-1568332305 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\circulo.cpp
+1568477298 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\circulo.cpp
 	"Circulo.h"
 	<iostream>
 
@@ -53,18 +54,19 @@
 	<cmath>
 	<iostream>
 
-1568165621 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\prismarectangular.cpp
+1568477894 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\prismarectangular.cpp
 	"PrismaRectangular.h"
 	<iostream>
 
-1568165623 c:\users\andres\documents\jla\c++\paquete!\figuras\include\prismarectangular.h
-	"Figura2D.h"
+1568477869 c:\users\andres\documents\jla\c++\paquete!\figuras\include\prismarectangular.h
+	"Figura3D.h"
 
-1568165819 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura3d.cpp
+1568477498 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\figura3d.cpp
 	"Figura3D.h"
 	<iostream>
 
-1568165684 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura3d.h
+1568478277 c:\users\andres\documents\jla\c++\paquete!\figuras\include\figura3d.h
+	"Figura.h"
 
 1567993225 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\prismatriangular.cpp
 	"PrismaTriangular.h"
@@ -74,11 +76,11 @@
 1567992861 c:\users\andres\documents\jla\c++\paquete!\figuras\include\prismatriangular.h
 	"Figura3D.h"
 
-1567993244 c:\users\andres\documents\jla\c++\paquete!\figuras\include\esfera.h
+1568477230 c:\users\andres\documents\jla\c++\paquete!\figuras\include\esfera.h
 	"Figura3D.h"
 	"Figura2D.h"
 
-1567993235 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\esfera.cpp
+1568477375 source:c:\users\andres\documents\jla\c++\paquete!\figuras\src\esfera.cpp
 	"Esfera.h"
 	<cmath>
 	<iostream>

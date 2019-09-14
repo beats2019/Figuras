@@ -7,7 +7,7 @@ class Triangulo : public Figura2D
 {
 
     public:
-        Triangulo( double b, double h );
+        Triangulo( double , double );
 
         virtual double calcularAreaFigura() const;
         virtual void imprimirInformacion() const;

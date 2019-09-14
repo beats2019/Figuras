@@ -4,49 +4,37 @@
 #include <iostream>
 using namespace std;
 
-    Esfera::Esfera( double r )
-        :radio( r )
+    Esfera::Esfera( double radioIntroducido )
+        :radioEsfera( radioIntroducido )
     {
-        //ctor
+        Figura3D::setAreaSuperficial( calcularAreaSuperficial() );
+        Figura3D::setVolumenSolido( calcularVolumenFigura() );
     }
 
-    void Esfera::setRadio( double r )
+    void Esfera::setRadioEsfera( double radioIntroducido )
     {
-        radio = r;
+        radioEsfera = radioIntroducido;
     }
 
-    double Esfera::getRadio() const
+    double Esfera::getRadioEsfera() const
     {
-        return radio;
+        return radioEsfera;
     }
 
-    double Esfera::area() const
+    double Esfera::calcularAreaSuperficial() const
     {
-        return 4 * PI * pow( getRadio() , 2 );
+        return 4 * PI * pow( getRadioEsfera() , 2 );
     }
 
-    double Esfera::volumen() const
+    double Esfera::calcularVolumenFigura() const
     {
-        return 4 / 3 * PI * pow( getRadio() , 3 );
+        return 4 / 3 * PI * pow( getRadioEsfera() , 3 );
     }
 
-    void Esfera::imprimir() const
+    void Esfera::imprimirInformacion() const
     {
-        cout << "La esfera tiene un radio de "
-        << getRadio() << ", un area de  "
-        << area() << " y un volumen de  "
-        << volumen() << endl;
+        cout << "\nLa esfera tiene un area superficial de "
+        << calcularAreaSuperficial() << "  y un volumen de "
+        << calcularVolumenFigura() << endl;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
